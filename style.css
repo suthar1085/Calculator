@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: dimgray;
+    color: #ebebeb;
     font-weight: bolder;
 }
 
@@ -11,7 +11,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
+    background-color: cyan;
+    background-image: url("https://directlinedev.com/media/cases/rooney/header/background_1_zM58lsj.wide.jpeg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
     height: 100vh;
 }
 
@@ -50,15 +55,15 @@ body{
 }
 
 .spl{
-    background-color: rgb(52, 212, 221);
-    color: aliceblue;
+    background-color: lightgray !important;
+    color: dimgray;
 }
 
 .spl:hover,.enter:hover{
     font-size: 3vw;
     background-color:red !important;
     color: aliceblue;
-    border: 2px solid rgb(84, 84, 84) !important;
+    border: 2px solid whitesmoke !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -68,6 +73,7 @@ body{
     border-radius: 5rem;
     border: none;
     font-size: 2.3vh;
+    background-color: dimgray;
     transition: font 0.2s ease-in-out;
 }
 
@@ -82,8 +88,8 @@ body{
 
 .main{
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);  
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);  
     width: 45vh;
     border-radius: 0.5rem;
     overflow: hidden;
