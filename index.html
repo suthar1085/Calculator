@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <form>
+
+            <div class="red">
+                <input type="text" name="red" id="num">
+            </div>
+            <div class="row">
+                <input type="button" class="spl" id="btn" value="+" onclick="red.value +='+' ">
+                <input type="button" class="spl" id="btn" value="-" onclick="red.value +='-' ">
+                <input type="button" class="spl" id="btn" value="*" onclick="red.value +='*' ">
+                <input type="button" class="spl" id="btn" value="/" onclick="red.value +='/' ">
+
+                <input type="button" id="btn" value="7" onclick="red.value +='7' ">
+                <input type="button" id="btn" value="8" onclick="red.value +='8' ">
+                <input type="button" id="btn" value="9" onclick="red.value +='9' ">
+                <input type="button" id="btn" value="DEL" onclick="red.value = red.value.toString().slice(0,-1) ">
+
+                <input type="button" id="btn" value="4" onclick="red.value +='4' ">
+                <input type="button" id="btn" value="5" onclick="red.value +='5' ">
+                <input type="button" id="btn" value="6" onclick="red.value +='6' ">
+
+                <input type="button" id="btn" value="1" onclick="red.value +='1' ">
+                <input type="button" id="btn" value="2" onclick="red.value +='2' ">
+                <input type="button" id="btn" value="3" onclick="red.value +='3' ">
+
+                <input type="button" id="btn" value="0" onclick="red.value +='0' ">
+                <input type="button" id="btn" value="." onclick="red.value +='.' ">
+                <input type="button" id="btn" value="AC" onclick="red.value ='' ">
+                <input type="button" id="btn" value="=" class="enter"
+                    style="color: azure; background-color: rgb(0, 234, 255);" onclick="red.value = eval(red.value) ">
+            </div>
+        </form>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: dimgray;
+    font-weight: bolder;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    height: 100vh;
+}
+
+
+.red{
+    background-color: red;
+}
+
+#num{
+    background-color: #00000000;
+    border: none;
+    font-size: 6vh;
+    width: 100%;
+    padding: 5%;
+    text-align: right;
+    border-style: none;
+    color: rgb(203, 203, 203);
+}
+
+#num:active, #num:focus{
+    outline: none;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0.8vw;
+    padding: 0.5rem;
+}
+
+.enter{
+    grid-column: 4 / 5;
+    grid-row: 3 / span 3;
+    height: 100% !important;
+}
+
+.spl{
+    background-color: rgb(52, 212, 221);
+    color: aliceblue;
+}
+
+.spl:hover,.enter:hover{
+    font-size: 3vw;
+    background-color:red !important;
+    color: aliceblue;
+    border: 2px solid rgb(84, 84, 84) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#btn{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 5rem;
+    border: none;
+    font-size: 2.3vh;
+    transition: font 0.2s ease-in-out;
+}
+
+#btn:hover{
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 3vh;
+    cursor: pointer;
+    background-color:rgb(236, 177, 177);
+    color: aliceblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.main{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+    width: 45vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* padding: 0.4rem; */
+}
